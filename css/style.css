@@ -3,11 +3,6 @@
   src: url('../fonts/bebas-neue-regular.eot');
   src: url('../fonts/bebas-neue-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-regular.woff2') format('woff2'), url('../fonts/bebas-neue-regular.woff') format('woff'), url('../fonts/bebas-neue-regular.ttf') format('truetype'), url('../fonts/bebas-neue-regular.svg#svgFontName') format('svg');
 }
-@font-face {
-  font-family: 'Helvetica Neue Medium';
-  src: url('../fonts/helvetica-neuecyr-medium.eot');
-  src: url('../fonts/helvetica-neuecyr-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/helvetica-neuecyr-medium.woff2') format('woff2'), url('../fonts/helvetica-neuecyr-medium.woff') format('woff'), url('../fonts/helvetica-neuecyr-medium.ttf') format('truetype'), url('../fonts/helvetica-neuecyr-medium.svg#svgFontName') format('svg');
-}
 * {
   outline: none!important;
 }
@@ -22,7 +17,7 @@ a:hover {
   color: #e8603c;
 }
 p {
-  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-family: 'Helvetica Neue Medium', 'Arial', sans-serif;
 }
 nav.navbar {
   border: 0;
@@ -352,6 +347,11 @@ footer .container .row {
   margin-left: 0;
   margin-right: 0;
 }
+@media (max-width: 300px) {
+  footer .container .row {
+    padding: 18px 20px;
+  }
+}
 footer h1 {
   font-size: 24px;
   letter-spacing: 1px;
@@ -363,7 +363,7 @@ footer p {
   margin-bottom: 14px;
 }
 footer #twitter a {
-  font-family: 'Helvetica Neue Medium', sans-serif;
+  font-family: 'Helvetica Neue Medium', "Arial", sans-serif;
   color: #f5bdae !important;
   display: inline-block;
   font-size: 12px;
